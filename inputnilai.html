@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Nilai Raport</title>
+</head>
+<body>
+    <h2>Form Input Nilai Raport</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Mata Pelajaran</th>
+                <th>Nilai Tugas</th>
+                <th>Nilai Semester</th>
+                <th>Nilai Mid</th>
+                <th>Kehadiran</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="nama[]" required></td>
+                <td>
+                    <select name="mata_pelajaran[]">
+                        <option value="Matematika">Matematika</option>
+                        <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                        <option value="bahasa_inggris">bahasa_inggris</option>
+                        <option value="pjok">pjok</option>
+                        <option value="agama">agama</option>
+                        <option value="PKK">PKK</option>
+                        <option value="TLJ">TLJ</option>
+                        <option value="ASJ">ASJ</option>
+                        <option value="AIJ">AIJ</option>
+                        <option value="WAN">WAN</option>
+                        <option value="PKN">PKN</option>
+                        
+                    </select>
+                </td>
+                <td><input type="number" name="nilai_tugas[]" min="0" max="100" required></td>
+                <td><input type="number" name="nilai_semester[]" min="0" max="100" required></td>
+                <td><input type="number" name="nilai_mid[]" min="0" max="100" required></td>
+                <td><input type="number" name="kehadiran[]" min="0" max="100" required></td>
+            </tr>
+            <!-- Tambahkan baris tambahan jika perlu -->
+        </tbody>
+    </table>
+    <input type="submit" value="Submit">
+</body>
+</html>

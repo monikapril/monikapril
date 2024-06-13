@@ -1,0 +1,199 @@
+MONIK APRIL 
+<head>
+    <title>Form Input Biodata</title>
+</head>
+
+<body>
+    <table border="1" bordercolor="red">
+        <tr>
+            <td>
+                <center>
+                    <h2>Form Input Biodata</h2>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form name="fm-input">
+                    <table>
+                        <tr>
+                            <td><label for="nama">No</label></td>
+                            <td>:</td>
+                            <td><input type="text" size="20" name="nama" id="nama" /></td>
+                        </tr>
+                      <tr>
+                            <td><label for="nama">NISN</label></td>
+                            <td>:</td>
+                            <td><input type="text" size="20" name="nama" id="nama" /></td>
+                        </tr>
+                      <tr>
+                            <td><label for="nama">Nama Lengkap</label></td>
+                            <td>:</td>
+                            <td><input type="text" size="20" name="nama" id="nama" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tll">Tempat, Tanggal Lahir</label></td>
+                            <td>:</td>
+                            <td>
+                                <input type="text" size="20" name="nama" />,
+                                <input type="text" size="2" name="tgl" />/
+                                <input type="text" size="2" name="bln" />/
+                                <input type="text" size="5" name="thn" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="alamat">Alamat</label></td>
+                            <td>:</td>
+                            <td><textarea name="alamat" id="alamat" cols="40" rows="3"></textarea></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="submit" name="submit" value="Submit"/>
+                                <input type="reset" name="reset" value="Clear!" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Nilai Raport</title>
+</head>
+
+<body>
+    <h2>Form Input Nilai Raport</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Mata Pelajaran</th>
+                <th>Nilai Tugas</th>
+                <th>Nilai Semester</th>
+                <th>Nilai Mid</th>
+                <th>Kehadiran</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="nama[]" required></td>
+                <td>
+                    <select name="mata_pelajaran[]">
+                        <option value="Matematika">Matematika</option>
+                        <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                        <option value="bahasa_inggris">bahasa_inggris</option>
+                        <option value="pjok">pjok</option>
+                        <option value="agama">agama</option>
+                        <option value="PKK">PKK</option>
+                        <option value="TLJ">TLJ</option>
+                        <option value="ASJ">ASJ</option>
+                        <option value="AIJ">AIJ</option>
+                        <option value="WAN">WAN</option>
+                        <option value="PKN">PKN</option>
+
+                    </select>
+                </td>
+                <td><input type="number" name="nilai_tugas[]" min="0" max="100" required></td>
+                <td><input type="number" name="nilai_semester[]" min="0" max="100" required></td>
+                <td><input type="number" name="nilai_mid[]" min="0" max="100" required></td>
+                <td><input type="number" name="kehadiran[]" min="0" max="100" required></td>
+            </tr>
+            <!-- Tambahkan baris tambahan jika perlu -->
+        </tbody>
+    </table>
+    <input type="submit" value="Submit">
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembar Raport</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lembar Raport</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Mata Pelajaran</th>
+                    <th>Nilai Tugas</th>
+                    <th>Nilai Semester</th>
+                    <th>Nilai Mid</th>
+                    <th>Kehadiran</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Masukkan data nilai siswa di sini -->
+
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
+
